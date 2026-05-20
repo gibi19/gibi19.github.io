@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3HJ6D5FGV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W3HJ6D5FGV');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gibin G | Cybersecurity & IT Support</title>
-    
-    <!-- Firewall / Network Erro Detection Script -->
-    <script>
+
         function handleNetworkError() {
             if (window.networkErrorTriggered) return;
             window.networkErrorTriggered = true;
@@ -348,18 +357,18 @@
                 desc: "Built a CLI tool for deep-dive web app analysis. Simulates attack vectors to uncover flaws in authentication and session management.",
                 tech: ["Python", "CLI", "Web Security"]
             },
-            {
-                title: "AI Video Creation",
-                type: "Generative AI",
-                desc: "Leveraged advanced generative AI platforms to produce a professional-grade advertisement video. Showcases expertise in cutting-edge prompt engineering and AI-driven content creation.",
-                tech: ["GenAI", "Prompt Engineering", "Video Editing"],
-                playlist: [
-                    { title: "Ad Campaign Demo 1", url: "videos/Insta_reel.mp4" },
-                    { title: "Ad Campaign Demo 2", url: "videos/Mattress test.mp4" }
-                    
-                ],
-                icon: <Icon name="PlayCircle" className="w-4 h-4 mr-1" />
-            }
+                {
+                    title: "AI Video Creation",
+                    type: "Generative AI",
+                    desc: "Leveraged advanced generative AI platforms to produce a professional-grade advertisement video. Showcases expertise in cutting-edge prompt engineering and AI-driven content creation.",
+                    tech: ["GenAI", "Prompt Engineering", "Video Editing"],
+                    playlist: [
+                        { title: "Ad Campaign Demo 1", url: "video/birthday.mp4" },
+                        { title: "Ad Campaign Demo 2", url: "video/Mattress test.mp4" },
+                        { title: "Ad Campaign Demo 3", url: "video/Insta_reel.mp4" }   
+                    ],
+                    icon: <Icon name="PlayCircle" className="w-4 h-4 mr-1" />
+                }
         ];
 
         const certifications = [
